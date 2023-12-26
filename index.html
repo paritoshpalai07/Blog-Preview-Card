@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: figtree;
+      font-size: 14px;
+    }
+
+    .background{
+      height: 100vh;
+      width: 100%;
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .courseBox{
+      height: 400px;
+      width: 325px;
+      background-color: white;
+      border-radius: 15px;
+      filter: drop-shadow(7px 7px black);
+      /* display: flex;
+      align-items: center; */
+      /* justify-content: space-around; */
+      /* flex-direction: column;  */
+    }
+
+    .courseBox:hover{
+      filter: drop-shadow(14px 14px black);
+    }
+
+    .courseThumbnail{
+      background-image: url("assets/images/illustration-article.svg");
+      background-position: center;
+      background-size: cover;
+      height: 150px;
+      width: 90%;
+      border-radius: 10px;
+      margin: 15px auto auto auto;
+    
+    }
+
+    /* -------------------Learning---------------------- */
+    .courseThumbnail + p{
+      background-color: hsl(47, 88%, 63%);
+      display: inline-block;
+      font-weight: 800;
+      padding: 5px 10px 5px 10px;
+      margin-top: 20px;
+      margin-left: 15px;
+      border-radius: 5px;
+    }
+    /* ----------------published-------------------------- */
+    .courseThumbnail + p + p{
+      opacity: 0.8;
+      font-weight: 100;
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+    /* -------------------html & css------------------------------- */
+    .courseThumbnail + p + p + p{
+      font-weight: 800;
+      margin-left: 15px;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .courseThumbnail + p + p + p:hover{
+      color: hsl(47, 88%, 63%);
+    }
+
+    /* -----------------------description-------------------------- */
+    .courseThumbnail + p + p + p + p{
+      margin-left: 15px;
+      margin-top: 10px;
+      font-weight: 100;
+      opacity: 0.5;
+    }
+
+    .author{
+      margin-left: 15px;
+      margin-top: 20px;
+      width: 38%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .authorImg{
+      background-image: url("assets/images/image-avatar.webp");
+      background-position: center;
+      background-size: cover;
+      height: 30px;
+      width: 30px;
+      /* display: inline-block; */
+    }
+
+    .author + p{
+      font-weight: 100;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Learning
+
+  Published 21 Dec 2023
+
+  HTML & CSS foundations
+
+  These languages are the backbone of every website, defining structure, content, and presentation.
+
+  Greg Hooper
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <div class="background">
+    <div class="courseBox">
+        <div class="courseThumbnail"></div>
+        <p>Learning</p>
+        <p>Published 21 Dec 2023</p>
+        <p>HTML & CSS foundations</p>
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <div class="author">
+          <div class="authorImg"></div>
+          <p>Greg Hooper</p>
+        </div>
+    </div>
+  </div>
+  
+</body>
+</html>
